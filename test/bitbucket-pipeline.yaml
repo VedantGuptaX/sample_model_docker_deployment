@@ -1,0 +1,11 @@
+image: python:3.10
+
+pipelines:
+  default:
+    - step:
+        name: Install & Test
+        script:
+          - pip install -r requirements.txt
+          - pip install pytest
+          - pytest
+
